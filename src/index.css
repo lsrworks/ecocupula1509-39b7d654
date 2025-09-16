@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lora:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Eco Cúpula Design System - Domos Geodésicos */
+
+@layer base {
+  :root {
+    /* Base colors - from brand palette */
+    --background: 0 0% 96.5%; /* #f5f5f5 */
+    --foreground: 0 0% 20%; /* #333333 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* Primary - Main green #2b4a2a */
+    --primary: 120 28% 22.7%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary - Light gray backgrounds */
+    --secondary: 0 0% 96.5%;
+    --secondary-foreground: 0 0% 20%;
+
+    /* Muted - Medium gray for secondary text #b3b3b3 */
+    --muted: 0 0% 96.5%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Accent - Green support color #4f7c4f for hovers */
+    --accent: 120 26% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 120 28% 22.7%;
+
+    --radius: 0.75rem;
+
+    /* Custom Eco Cúpula tokens */
+    --eco-green: 120 28% 22.7%; /* #2b4a2a - main brand color */
+    --eco-green-hover: 120 26% 40%; /* #4f7c4f - hover state */
+    --eco-green-light: 120 20% 85%; /* light green tint */
+    --eco-gray-light: 0 0% 96.5%; /* #f5f5f5 */
+    --eco-gray-medium: 0 0% 70%; /* #b3b3b3 */
+    --eco-gray-dark: 0 0% 20%; /* #333333 */
+
+    /* Gradients */
+    --gradient-eco: linear-gradient(135deg, hsl(var(--eco-green)), hsl(var(--eco-green-hover)));
+    --gradient-nature: linear-gradient(180deg, hsl(var(--eco-green-light)), hsl(var(--background)));
+    --gradient-hero: linear-gradient(rgba(43, 74, 42, 0.7), rgba(43, 74, 42, 0.4));
+
+    /* Shadows */
+    --shadow-eco: 0 10px 30px -10px hsl(var(--eco-green) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--eco-gray-dark) / 0.1);
+    --shadow-dome: 0 20px 40px -10px hsl(var(--eco-green) / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lora', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .font-display {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Lora', serif;
+  }
+}
+
+@layer components {
+  /* Custom button variants */
+  .btn-eco {
+    @apply bg-primary text-primary-foreground hover:bg-accent;
+    @apply px-6 py-3 rounded-xl font-display font-semibold;
+    @apply transform transition-all duration-300 hover:scale-105;
+    @apply shadow-lg hover:shadow-xl;
+  }
+
+  .btn-eco-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+    @apply px-6 py-3 rounded-xl font-display font-semibold;
+    @apply transform transition-all duration-300 hover:scale-105;
+    @apply bg-transparent;
+  }
+
+  /* Hero section styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Card styles */
+  .card-eco {
+    @apply bg-card border border-border rounded-2xl;
+    @apply shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply hover:transform hover:scale-105;
+  }
+
+  /* Geometric elements */
+  .dome-shape {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .geometric-accent {
+    background: conic-gradient(from 45deg, hsl(var(--eco-green)), hsl(var(--eco-green-hover)), hsl(var(--eco-green)));
+  }
+
+  /* Text styles */
+  .text-eco-gradient {
+    background: var(--gradient-eco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-12 md:py-16;
+  }
+
+  .container-eco {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .article-content h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-display font-bold mt-8 mb-6 first:mt-0 leading-tight;
+  }
+  
+  .article-content h2 {
+    @apply text-xl md:text-2xl lg:text-3xl font-display font-bold mt-8 mb-4 leading-tight;
+  }
+  
+  .article-content h3 {
+    @apply text-lg md:text-xl lg:text-2xl font-display font-semibold mt-6 mb-3 leading-tight;
+  }
+  
+  .article-content p {
+    @apply text-muted-foreground leading-relaxed mb-6 text-base md:text-lg;
+  }
+  
+  .article-content ul {
+    @apply list-disc list-inside space-y-3 mb-6 text-muted-foreground pl-4 md:pl-6;
+  }
+  
+  .article-content li {
+    @apply leading-relaxed text-base md:text-lg;
+  }
+  
+  .article-content strong {
+    @apply text-foreground font-semibold;
+  }
+  
+  .article-content a {
+    @apply text-primary hover:text-accent underline transition-colors;
+  }
+
+  /* Responsive touch targets for mobile */
+  @media (max-width: 768px) {
+    .btn-eco, .eco-outline, button, a[role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+      padding: 12px 24px;
+    }
+  }
+}
