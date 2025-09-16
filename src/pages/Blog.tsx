@@ -123,7 +123,6 @@ const Blog = () => {
                       >
                         <Link to={`/blog/${featuredPost.slug}`}>
                           Ler Artigo
-                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </Button>
                     </div>
@@ -207,10 +206,9 @@ const Blog = () => {
                         
                         <Link
                           to={`/blog/${post.slug}`}
-                          className="text-primary font-display font-semibold text-sm hover:text-accent transition-colors group"
+                          className="text-primary font-display font-semibold text-sm hover:text-accent transition-colors"
                         >
                           Ler mais
-                          <ArrowRight className="ml-1 h-3 w-3 inline group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </div>
                     </div>

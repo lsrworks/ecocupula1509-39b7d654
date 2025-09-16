@@ -22,10 +22,9 @@ const NotFound = () => {
         <p className="text-lg text-muted-foreground mb-8">
           A página que você está procurando não existe ou foi movida.
         </p>
-        <Link to="/" className="btn-eco group">
+        <Link to="/" className="btn-eco">
           <Home className="mr-2 h-5 w-5" />
           Voltar ao Início
-          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </div>

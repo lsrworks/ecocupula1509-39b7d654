@@ -151,10 +151,9 @@ const FAQ = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-eco group"
+              className="btn-eco"
             >
               Fale com Nossa Equipe
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
@@ -175,10 +174,9 @@ const FAQ = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-primary hover:bg-eco-gray-light px-12 py-5 rounded-xl font-display font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl group"
+              className="bg-white text-primary hover:bg-eco-gray-light px-12 py-5 rounded-xl font-display font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Solicitar Orçamento
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>

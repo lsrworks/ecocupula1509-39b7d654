@@ -198,10 +198,9 @@ const Historia = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-eco group"
+                className="btn-eco"
               >
                 Explore Nossos Domos
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
             <div className="relative">
@@ -256,10 +255,9 @@ const Historia = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-eco group"
+              className="btn-eco"
             >
               Faça Parte Desta História
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
