@@ -130,7 +130,19 @@ const BlogPost = () => {
             <div className="prose prose-lg max-w-none">
               <div 
                 className="article-content"
-                dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br/>') }}
+                dangerouslySetInnerHTML={{ 
+                  __html: post.content
+                    .replace(/\n\n/g, '</p><p>')
+                    .replace(/^/, '<p>')
+                    .replace(/$/, '</p>')
+                    .replace(/<p><h/g, '<h')
+                    .replace(/<\/h(\d)><\/p>/g, '</h$1>')
+                    .replace(/<p><ul>/g, '<ul>')
+                    .replace(/<\/ul><\/p>/g, '</ul>')
+                    .replace(/<p><li>/g, '<li>')
+                    .replace(/<\/li><\/p>/g, '</li>')
+                    .replace(/<p>---<\/p>/g, '<hr class="my-8 border-border" />')
+                }}
               />
             </div>
           </div>

@@ -95,8 +95,6 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Impacto visual marcante</strong></li>
 </ul>
 
-<h2>Conclusão</h2>
-
 <p>À medida que a consciência ambiental cresce e a necessidade por soluções habitacionais inovadoras aumenta, os domos geodésicos se estabelecem como protagonistas da arquitetura sustentável. Sua combinação única de eficiência, beleza e responsabilidade ambiental os torna ideais para quem busca construções verdadeiramente do futuro.</p>
 
 <p><strong>Interessado em um projeto de domo geodésico?</strong> Na Eco Cúpula, nossa equipe especializada desenvolve projetos personalizados que combinam sustentabilidade, eficiência e design excepcional.</p>
@@ -250,8 +248,6 @@ Regiões com maior potencial:
 - Parcerias com influenciadores
 - Plataformas especializadas
 - SEO e marketing de conteúdo
-
-## Conclusão
 
 O glamping representa uma oportunidade de ouro para empreendedores visionários. Os domos geodésicos, em particular, oferecem a combinação perfeita de diferenciação, sustentabilidade e rentabilidade que o mercado busca.
 
@@ -440,8 +436,6 @@ Domos geodésicos são crescentemente usados para:
 - **Escolas**: Ambientes de aprendizagem baseados em geometria sagrada
 - **Escritórios**: Espaços corporativos que reduzem stress
 - **Residências**: Lares projetados para bem-estar familiar
-
-## Conclusão
 
 Os domos geodésicos representam muito mais que uma inovação arquitetônica - são ponte entre a sabedoria ancestral e a ciência moderna, oferecendo espaços que naturalmente promovem bem-estar, criatividade e conexão espiritual.
 

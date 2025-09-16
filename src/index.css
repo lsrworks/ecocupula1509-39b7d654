@@ -196,31 +196,42 @@
 
   /* Section spacing */
   .section-padding {
-    @apply py-12 md:py-16;
+    @apply py-8 md:py-12 lg:py-16;
   }
 
   .container-eco {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  /* Improved mobile responsiveness */
+  @media (max-width: 640px) {
+    .section-padding {
+      @apply py-6;
+    }
+    
+    .container-eco {
+      @apply px-3;
+    }
+  }
+
   .article-content h1 {
-    @apply text-2xl md:text-3xl lg:text-4xl font-display font-bold mt-8 mb-6 first:mt-0 leading-tight;
+    @apply text-2xl md:text-3xl lg:text-4xl font-display font-bold mt-8 mb-4 first:mt-0 leading-tight;
   }
   
   .article-content h2 {
-    @apply text-xl md:text-2xl lg:text-3xl font-display font-bold mt-8 mb-4 leading-tight;
+    @apply text-xl md:text-2xl lg:text-3xl font-display font-bold mt-6 mb-3 leading-tight;
   }
   
   .article-content h3 {
-    @apply text-lg md:text-xl lg:text-2xl font-display font-semibold mt-6 mb-3 leading-tight;
+    @apply text-lg md:text-xl lg:text-2xl font-display font-semibold mt-5 mb-2 leading-tight;
   }
   
   .article-content p {
-    @apply text-muted-foreground leading-relaxed mb-6 text-base md:text-lg;
+    @apply text-muted-foreground leading-relaxed mb-4 text-base md:text-lg;
   }
   
   .article-content ul {
-    @apply list-disc list-inside space-y-3 mb-6 text-muted-foreground pl-4 md:pl-6;
+    @apply list-disc list-inside space-y-2 mb-4 text-muted-foreground pl-4 md:pl-6;
   }
   
   .article-content li {
@@ -235,12 +246,68 @@
     @apply text-primary hover:text-accent underline transition-colors;
   }
 
+  /* Remove excessive spacing for professional reading */
+  .article-content > *:last-child {
+    @apply mb-0;
+  }
+
+  /* Better responsive spacing */
+  @media (max-width: 768px) {
+    .article-content h1 {
+      @apply text-xl mb-3 mt-6;
+    }
+    
+    .article-content h2 {
+      @apply text-lg mb-2 mt-5;
+    }
+    
+    .article-content h3 {
+      @apply text-base mb-2 mt-4;
+    }
+    
+    .article-content p {
+      @apply text-sm mb-3 leading-relaxed;
+    }
+    
+    .article-content ul {
+      @apply mb-3 space-y-1;
+    }
+    
+    .article-content li {
+      @apply text-sm;
+    }
+  }
+
+  /* Navigation responsive improvements */
+  .nav-mobile {
+    @apply fixed inset-x-0 top-16 bg-background/95 backdrop-blur border-b border-border z-40;
+  }
+
+  .nav-desktop .nav-item {
+    @apply whitespace-nowrap;
+  }
+
   /* Responsive touch targets for mobile */
   @media (max-width: 768px) {
-    .btn-eco, .eco-outline, button, a[role="button"] {
+    .btn-eco, .btn-eco-outline, button, a[role="button"] {
       min-height: 44px;
       min-width: 44px;
       padding: 12px 24px;
+    }
+    
+    .nav-mobile .nav-item {
+      @apply py-3 px-4 border-b border-border/50 last:border-b-0;
+    }
+  }
+
+  /* Desktop navigation adjustments */
+  @media (min-width: 1024px) {
+    .nav-desktop {
+      @apply flex-nowrap;
+    }
+    
+    .nav-desktop .nav-item {
+      @apply px-3 py-2 text-sm;
     }
   }
 }

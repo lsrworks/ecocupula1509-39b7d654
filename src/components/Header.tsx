@@ -35,8 +35,8 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden lg:block nav-desktop">
+            <div className="flex items-center space-x-2 xl:space-x-4">
               {navigation.map((item) => {
                 if (item.external) {
                   return (
@@ -45,7 +45,7 @@ const Header = () => {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-display font-medium px-3 py-2 rounded-lg text-sm transition-colors text-muted-foreground hover:text-primary hover:bg-eco-green-light/50"
+                      className="nav-item font-display font-medium px-2 py-2 rounded-lg text-xs xl:text-sm transition-colors text-muted-foreground hover:text-primary hover:bg-eco-green-light/50 whitespace-nowrap"
                     >
                       {item.name}
                     </a>
@@ -55,7 +55,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`font-display font-medium px-3 py-2 rounded-lg text-sm transition-colors ${
+                    className={`nav-item font-display font-medium px-2 py-2 rounded-lg text-xs xl:text-sm transition-colors whitespace-nowrap ${
                       isActive(item.href)
                         ? 'text-primary bg-eco-green-light'
                         : 'text-muted-foreground hover:text-primary hover:bg-eco-green-light/50'
@@ -82,8 +82,8 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
+          <div className="lg:hidden nav-mobile">
+            <div className="py-2 space-y-0 bg-background/95 backdrop-blur">
               {navigation.map((item) => {
                 if (item.external) {
                   return (
@@ -93,7 +93,7 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setIsMenuOpen(false)}
-                      className="block px-3 py-2 rounded-md text-base font-display font-medium transition-colors text-muted-foreground hover:text-primary hover:bg-eco-green-light/50"
+                      className="nav-item block px-4 py-3 text-base font-display font-medium transition-colors text-muted-foreground hover:text-primary hover:bg-eco-green-light/50 border-b border-border/50 last:border-b-0"
                     >
                       {item.name}
                     </a>
@@ -104,7 +104,7 @@ const Header = () => {
                     key={item.name}
                     to={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block px-3 py-2 rounded-md text-base font-display font-medium transition-colors ${
+                    className={`nav-item block px-4 py-3 text-base font-display font-medium transition-colors border-b border-border/50 last:border-b-0 ${
                       isActive(item.href)
                         ? 'text-primary bg-eco-green-light'
                         : 'text-muted-foreground hover:text-primary hover:bg-eco-green-light/50'
