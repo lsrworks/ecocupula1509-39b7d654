@@ -45,7 +45,7 @@ const Produtos = () => {
       type: "Acabamento Básico",
       description: "Estrutura completa pronta para locação padrão",
       features: [
-        "Estrutura metálica premium",
+        "Estrutura premium",
         "Cobertura impermeável",
         "Janelas básicas",
         "Piso preparado",
@@ -85,23 +85,8 @@ const Produtos = () => {
         </div>
       </section>
 
-      {/* Models Introduction */}
-      <section id="modelos" className="section-padding bg-eco-gray-light">
-        <div className="container-eco">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-              Modelos Disponíveis
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Cada modelo foi desenvolvido para atender diferentes necessidades, 
-              oferecendo máximo retorno do investimento.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Models Comparison */}
-      <section className="section-padding">
+      <section id="modelos" className="section-padding bg-eco-gray-light">
         <div className="container-eco">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">

@@ -8,8 +8,6 @@ import Index from "./pages/Index";
 import QuemSomos from "./pages/QuemSomos";
 import Produtos from "./pages/Produtos";
 import Historia from "./pages/Historia";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
 import Beneficios from "./pages/Beneficios";
 import FAQ from "./pages/FAQ";
 import Investir from "./pages/Investir";
@@ -29,8 +27,6 @@ const App = () => (
             <Route path="/quem-somos" element={<QuemSomos />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/historia" element={<Historia />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/beneficios" element={<Beneficios />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/investir" element={<Investir />} />

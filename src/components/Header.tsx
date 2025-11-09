@@ -13,7 +13,6 @@ const Header = () => {
     { name: 'Quem Somos', href: '/quem-somos' },
     { name: 'Modelos', href: '/produtos' },
     { name: 'Origem', href: '/historia' },
-    { name: 'Blog', href: '/blog' },
     { name: 'Benefícios', href: '/beneficios' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Fale Conosco', href: whatsappLink, external: true },

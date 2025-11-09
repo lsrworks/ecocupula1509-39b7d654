@@ -8,47 +8,47 @@ const FAQ = () => {
   const faqs = [
     {
       question: "O que é exatamente um domo geodésico?",
-      answer: "Um domo geodésico é uma estrutura arquitetônica baseada em geometria esférica, composta por uma rede de triângulos que se conectam para formar uma superfície curva. Esta forma distribui uniformemente as cargas estruturais, criando uma construção extremamente resistente e eficiente energeticamente. Os domos são ideais para hospedagens diferenciadas, espaços de eventos e projetos de turismo sustentável."
+      answer: "Uma estrutura arquitetônica baseada em geometria esférica, composta por triângulos interligados. Esta forma distribui uniformemente as cargas, criando uma construção resistente e eficiente energeticamente, ideal para hospedagens e turismo sustentável."
     },
     {
       question: "Qual a resistência dos domos geodésicos a ventos fortes?",
-      answer: "Os domos geodésicos são excepcionalmente resistentes a ventos fortes devido à sua forma aerodinâmica e distribuição uniforme de cargas. Nossos domos são projetados para resistir a ventos de até 200 km/h, superando a maioria das construções convencionais. A estrutura geodésica não apresenta cantos ou superfícies planas que possam criar turbulência, tornando-a naturalmente mais resistente a intempéries."
+      answer: "Projetados para resistir a ventos de até 200 km/h. A forma aerodinâmica e distribuição uniforme de cargas tornam os domos naturalmente mais resistentes que construções convencionais."
     },
     {
       question: "Qual a durabilidade esperada de um domo geodésico?",
-      answer: "Com manutenção adequada, nossos domos geodésicos têm vida útil de mais de 30 anos. Utilizamos materiais de alta qualidade, incluindo estrutura metálica tratada contra corrosão e coberturas resistentes a UV. A geometria da estrutura distribui uniformemente as cargas, reduzindo o desgaste e aumentando significativamente a durabilidade comparada a construções convencionais."
+      answer: "Com manutenção adequada, mais de 30 anos. Usamos materiais de alta qualidade, estrutura metálica tratada contra corrosão e coberturas resistentes a UV."
     },
     {
       question: "Como funciona o isolamento térmico e acústico?",
-      answer: "Os domos oferecem isolamento superior devido à sua forma esférica, que minimiza a área de superfície exposta. Utilizamos sistemas de isolamento térmico multicamadas e, na versão premium, vidros duplos e isolamento acústico especializado. A geometria circular também contribui naturalmente para o isolamento acústico, criando ambientes silenciosos e confortáveis mesmo em locais com ruído externo."
+      answer: "A forma esférica minimiza a área de superfície exposta. Usamos isolamento térmico multicamadas e, na versão premium, vidros duplos e isolamento acústico especializado."
     },
     {
       question: "Em que tipos de terreno os domos podem ser instalados?",
-      answer: "Os domos geodésicos são versáteis e podem ser instalados em diversos tipos de terreno: plano, inclinado, rochoso ou arenoso. Não necessitam de fundações complexas como construções tradicionais, podendo ser instalados sobre sapatas, pilotis ou sistemas de fundação simplificados. Esta flexibilidade permite aproveitamento de terrenos antes considerados inadequados para construção."
+      answer: "Podem ser instalados em terreno plano, inclinado, rochoso ou arenoso. Não necessitam de fundações complexas, podendo usar sapatas, pilotis ou sistemas simplificados."
     },
     {
       question: "Quanto tempo leva para construir e instalar um domo?",
-      answer: "O tempo de instalação varia conforme o modelo e acabamento escolhido. Domos básicos podem ser instalados em 3-5 dias, enquanto modelos premium com acabamentos completos levam de 7-14 dias. Este tempo é significativamente menor que construções convencionais, permitindo retorno mais rápido do investimento e menor impacto no local de instalação."
+      answer: "Domos básicos: 3-5 dias. Modelos premium com acabamentos completos: 7-14 dias. Significativamente mais rápido que construções convencionais."
     },
     {
       question: "Qual a frequência de manutenção necessária?",
-      answer: "Os domos geodésicos requerem manutenção mínima. Recomendamos inspeções anuais da estrutura, limpeza semestral da cobertura e verificação das vedações. A geometria da estrutura facilita a autolimpeza pela chuva e reduz acúmulo de detritos. Comparado a construções convencionais, a manutenção é até 70% menor, representando economia significativa a longo prazo."
+      answer: "Manutenção mínima: inspeções anuais, limpeza semestral da cobertura e verificação das vedações. Até 70% menos manutenção que construções convencionais."
     },
     {
       question: "É possível personalizar o design e layout interno?",
-      answer: "Absolutamente! Cada projeto da Eco Cúpula é personalizado conforme as necessidades do cliente. Oferecemos desde acabamentos básicos até versões premium com interiores completos, incluindo banheiros, cozinhas, mezaninos, decks externos e sistemas de climatização. Nossos arquitetos trabalham em conjunto com você para criar o domo ideal para seu projeto."
+      answer: "Sim! Oferecemos desde acabamentos básicos até versões premium completas: banheiros, cozinhas, mezaninos, decks e climatização. Nossos arquitetos criam o projeto ideal para você."
     },
     {
       question: "Vocês fazem projetos especiais ou sob medida?",
-      answer: "Sim, desenvolvemos projetos especiais e sob medida para necessidades específicas. Já criamos domos para restaurantes, spas, escritórios, estúdios, centros de eventos e projetos corporativos. Nossa equipe técnica adapta dimensões, acabamentos e funcionalidades para atender perfeitamente aos requisitos de cada cliente e projeto."
+      answer: "Sim, desenvolvemos projetos personalizados para restaurantes, spas, escritórios, estúdios, eventos e projetos corporativos. Adaptamos dimensões, acabamentos e funcionalidades às suas necessidades."
     },
     {
       question: "Como funciona para usar o domo no Airbnb?",
-      answer: "Os domos geodésicos são perfeitos para Airbnb e plataformas de hospedagem! Oferecemos consultoria específica para projetos de locação, incluindo layouts otimizados para hóspedes, acabamentos adequados ao uso intensivo e documentação necessária para licenciamento. Muitos clientes relatam taxas de ocupação acima de 85% e possibilidade de cobrar preços premium devido à experiência única oferecida."
+      answer: "Oferecemos consultoria específica para locação: layouts otimizados, acabamentos adequados e documentação para licenciamento. Clientes relatam ocupação acima de 85% e possibilidade de preços premium."
     },
     {
       question: "Qual o investimento necessário para ter um domo?",
-      answer: "O investimento varia conforme modelo, acabamento e personalização desejada. Domos básicos têm custo inicial menor que construções convencionais equivalentes, enquanto versões premium oferecem relação custo-benefício excepcional considerando a durabilidade e eficiência energética. Fornecemos orçamentos detalhados e personalizados. Entre em contato para receber uma proposta específica para seu projeto."
+      answer: "Varia conforme modelo, acabamento e personalização. Domos básicos têm custo inicial menor que construções convencionais. Entre em contato para receber orçamento personalizado."
     }
   ];
 

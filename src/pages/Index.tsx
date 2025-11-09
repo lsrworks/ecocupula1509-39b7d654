@@ -1,6 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/realistic-wooden-dome-forest.jpg';
+import heroImage from '@/assets/hero-dome-new.webp';
 import domeModelsImage from '@/assets/dome-models.jpg';
 
 const Index = () => {
