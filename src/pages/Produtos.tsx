@@ -76,12 +76,7 @@ const Produtos = () => {
     <div className="pt-16">
       {/* Hero Banner Section */}
       <section 
-        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center text-white"
-        style={{
-          backgroundImage: `linear-gradient(rgba(43, 74, 42, 0.7), rgba(43, 74, 42, 0.4)), url(${woodenDomeNature})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-primary text-primary-foreground"
       >
         <div className="container-eco text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
