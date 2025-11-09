@@ -76,21 +76,16 @@ const Produtos = () => {
     <div className="pt-16">
       {/* Hero Banner Section */}
       <section 
-        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-primary text-primary-foreground"
+        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-background"
       >
         <div className="container-eco text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Nossos <span className="text-white">Modelos</span>
+            Nossos <span className="text-primary">Modelos</span>
           </h1>
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto text-muted-foreground">
             Descubra nossa linha completa de domos geodésicos de madeira, cada um projetado 
             para proporcionar experiências únicas em harmonia com a natureza.
           </p>
-          <Button variant="eco-cta" size="responsive" asChild>
-            <a href="#modelos">
-              Ver Modelos
-            </a>
-          </Button>
         </div>
       </section>
 
