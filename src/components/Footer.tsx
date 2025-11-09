@@ -32,13 +32,17 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/ecocupula/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-eco-green hover:bg-eco-green-hover rounded-full flex items-center justify-center transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=61573529977157" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-eco-green hover:bg-eco-green-hover rounded-full flex items-center justify-center transition-colors"
               >
                 <Facebook className="h-5 w-5" />

@@ -16,8 +16,7 @@ const Produtos = () => {
       capacity: "2-4 pessoas",
       mezzanine: "Opcional",
       icon: <Home className="h-6 w-6" />,
-      features: ["Ideal para casais", "Instalação rápida"],
-      description: "Perfeito para casais e experiências acolhedoras"
+      popular: false
     },
     {
       name: "Domo Família",
@@ -27,8 +26,6 @@ const Produtos = () => {
       capacity: "4-6 pessoas",
       mezzanine: "Incluído",
       icon: <Users className="h-6 w-6" />,
-      features: ["Mezanino incluído", "Versátil"],
-      description: "Ideal para famílias e grupos pequenos",
       popular: true
     },
     {
@@ -39,8 +36,7 @@ const Produtos = () => {
       capacity: "6-8 pessoas",
       mezzanine: "Duplo",
       icon: <Maximize className="h-6 w-6" />,
-      features: ["Duplo mezanino", "Máximo aproveitamento"],
-      description: "Para experiências luxuosas e eventos especiais"
+      popular: false
     }
   ];
 
@@ -131,10 +127,9 @@ const Produtos = () => {
                   {model.icon}
                 </div>
                 
-                <h3 className="text-2xl font-display font-bold text-center mb-4">{model.name}</h3>
-                <p className="text-muted-foreground text-center mb-6">{model.description}</p>
+                <h3 className="text-2xl font-display font-bold text-center mb-6">{model.name}</h3>
                 
-                <div className="space-y-3 mb-6">
+                <div className="space-y-3 mb-8">
                   <div className="flex justify-between py-2 border-b border-border">
                     <span className="font-display font-medium">Diâmetro</span>
                     <span className="text-primary font-semibold">{model.diameter}</span>
@@ -156,15 +151,6 @@ const Produtos = () => {
                     <span className="text-primary font-semibold">{model.mezzanine}</span>
                   </div>
                 </div>
-                
-                <ul className="space-y-2 mb-8">
-                  {model.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center">
-                      <Check className="h-5 w-5 text-primary mr-2 flex-shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
                 
                 <Button
                   variant={model.popular ? 'eco' : 'eco-outline'}
@@ -240,27 +226,6 @@ const Produtos = () => {
       </section>
 
 
-      {/* CTA Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-eco text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-            Pronto para Começar seu Projeto?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Receba um orçamento personalizado para o seu domo geodésico. 
-            Nossa equipe está pronta para tornar sua visão realidade.
-          </p>
-          <Button variant="eco-cta" size="responsive" asChild>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitar Orçamento Personalizado
-            </a>
-          </Button>
-        </div>
-      </section>
     </div>
   );
 };

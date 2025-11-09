@@ -159,28 +159,6 @@ const FAQ = () => {
         </div>
       </section>
 
-      {/* Quick Contact */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-eco text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-            Transforme sua Ideia em Realidade
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Entre em contato agora mesmo e receba todas as informações 
-            para começar seu projeto de domo geodésico.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-primary hover:bg-eco-gray-light px-12 py-5 rounded-xl font-display font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Solicitar Orçamento
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
