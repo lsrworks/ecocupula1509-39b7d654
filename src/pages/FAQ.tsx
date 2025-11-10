@@ -28,7 +28,7 @@ const FAQ = () => {
     },
     {
       question: "Quanto tempo leva para construir um domo?",
-      answer: "O prazo de construção varia de 15 a 60 dias, dependendo do modelo escolhido e do nível de acabamento desejado."
+      answer: "O tempo de construção varia entre 15 e 60 dias, dependendo do modelo e das condições do local."
     },
     {
       question: "Qual a frequência de manutenção necessária?",

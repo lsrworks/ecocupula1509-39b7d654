@@ -27,7 +27,7 @@ const Index = () => {
         <div className="relative z-10 container-eco text-center text-white">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6">
             Domos Geodésicos
-            <span className="block text-eco-green-light">para Turismo de Experiência e Investimentos Sustentáveis</span>
+            <span className="block text-white">para Turismo de Experiência e Investimentos Sustentáveis</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">

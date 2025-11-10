@@ -26,9 +26,9 @@
     --secondary: 0 0% 96.5%;
     --secondary-foreground: 0 0% 20%;
 
-    /* Muted - Medium gray for secondary text #b3b3b3 */
+    /* Muted - Medium gray for secondary text - darker for better readability */
     --muted: 0 0% 96.5%;
-    --muted-foreground: 0 0% 70%;
+    --muted-foreground: 0 0% 40%;
 
     /* Accent - Green support color #4f7c4f for hovers */
     --accent: 120 26% 40%;
