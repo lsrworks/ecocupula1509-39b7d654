@@ -27,8 +27,8 @@ const FAQ = () => {
       answer: "Podem ser instalados em terreno plano, inclinado, rochoso ou arenoso. Não necessitam de fundações complexas, podendo usar sapatas, pilotis ou sistemas simplificados."
     },
     {
-      question: "Quanto tempo leva para construir e instalar um domo?",
-      answer: "Domos básicos: 3-5 dias. Modelos premium com acabamentos completos: 7-14 dias. Significativamente mais rápido que construções convencionais."
+      question: "Quanto tempo leva para construir um domo?",
+      answer: "O prazo de construção varia de 15 a 60 dias, dependendo do modelo escolhido e do nível de acabamento desejado."
     },
     {
       question: "Qual a frequência de manutenção necessária?",

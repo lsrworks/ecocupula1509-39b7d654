@@ -74,11 +74,11 @@ const Produtos = () => {
       <section 
         className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-background"
       >
-        <div className="container-eco text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+        <div className="container-eco text-center px-4 md:px-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4">
             Nossos <span className="text-primary">Modelos</span>
           </h1>
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto text-muted-foreground">
+          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto text-foreground/80">
             Descubra nossa linha completa de domos geodésicos de madeira, cada um projetado 
             para proporcionar experiências únicas em harmonia com a natureza.
           </p>
@@ -87,19 +87,19 @@ const Produtos = () => {
 
       {/* Models Comparison */}
       <section id="modelos" className="section-padding bg-eco-gray-light">
-        <div className="container-eco">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+        <div className="container-eco px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
               Escolha o Modelo Ideal
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
               Cada modelo foi desenvolvido para atender diferentes necessidades e capacidades
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
             {domeModels.map((model, index) => (
-              <div key={index} className={`card-eco p-8 relative ${model.popular ? 'ring-2 ring-primary' : ''}`}>
+              <div key={index} className={`card-eco p-6 md:p-8 relative ${model.popular ? 'ring-2 ring-primary' : ''}`}>
                 {model.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-display font-semibold">
@@ -108,13 +108,13 @@ const Produtos = () => {
                   </div>
                 )}
                 
-                <div className="flex items-center justify-center w-16 h-16 bg-primary text-primary-foreground rounded-full mb-6 mx-auto">
+                <div className="flex items-center justify-center w-16 h-16 bg-primary text-primary-foreground rounded-full mb-4 mx-auto">
                   {model.icon}
                 </div>
                 
-                <h3 className="text-2xl font-display font-bold text-center mb-6">{model.name}</h3>
+                <h3 className="text-2xl font-display font-bold text-center mb-4">{model.name}</h3>
                 
-                <div className="space-y-3 mb-8">
+                <div className="space-y-2 mb-6">
                   <div className="flex justify-between py-2 border-b border-border">
                     <span className="font-display font-medium">Diâmetro</span>
                     <span className="text-primary font-semibold">{model.diameter}</span>
@@ -154,12 +154,12 @@ const Produtos = () => {
             ))}
           </div>
 
-          <div className="text-center">
-            <p className="text-lg text-muted-foreground mb-6">
+          <div className="text-center px-4 md:px-0">
+            <p className="text-lg text-foreground/80 mb-6">
               <strong>Cada projeto é único.</strong> Todos os domos podem ser personalizados 
               conforme suas necessidades específicas.
             </p>
-            <Button variant="eco" size="responsive" asChild>
+            <Button variant="eco" size="responsive" asChild className="mx-auto">
               <a
                 href={whatsappLink}
                 target="_blank"
@@ -174,33 +174,33 @@ const Produtos = () => {
 
       {/* Finishings */}
       <section className="section-padding bg-eco-gray-light">
-        <div className="container-eco">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+        <div className="container-eco px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
               Opções de Acabamento
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
               Escolha o nível de acabamento que melhor atende ao seu projeto e orçamento
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {finishings.map((finishing, index) => (
-              <div key={index} className={`card-eco p-8 ${finishing.premium ? 'ring-2 ring-primary' : ''}`}>
+              <div key={index} className={`card-eco p-6 md:p-8 ${finishing.premium ? 'ring-2 ring-primary' : ''}`}>
                 {finishing.premium && (
-                  <div className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-display font-semibold mb-4">
+                  <div className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-display font-semibold mb-3">
                     Premium
                   </div>
                 )}
                 
-                <h3 className="text-2xl font-display font-bold mb-4">{finishing.type}</h3>
-                <p className="text-muted-foreground mb-6">{finishing.description}</p>
+                <h3 className="text-2xl font-display font-bold mb-3">{finishing.type}</h3>
+                <p className="text-foreground/80 mb-4">{finishing.description}</p>
                 
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {finishing.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <Check className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                      <span>{feature}</span>
+                      <span className="text-foreground/90">{feature}</span>
                     </li>
                   ))}
                 </ul>
