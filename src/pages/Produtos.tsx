@@ -72,10 +72,10 @@ const Produtos = () => {
     <div className="pt-16">
       {/* Hero Banner Section */}
       <section 
-        className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-background"
+        className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center bg-background"
       >
         <div className="container-eco text-center px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-3">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-2">
             Nossos <span className="text-primary">Modelos</span>
           </h1>
           <p className="text-xl md:text-2xl leading-snug max-w-3xl mx-auto text-foreground">
@@ -86,9 +86,9 @@ const Produtos = () => {
       </section>
 
       {/* Models Comparison */}
-      <section id="modelos" className="section-padding bg-eco-gray-light">
+      <section id="modelos" className="py-12 md:py-16 bg-eco-gray-light">
         <div className="container-eco px-6 md:px-8">
-          <div className="text-center mb-6">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-2">
               Escolha o Modelo Ideal
             </h2>

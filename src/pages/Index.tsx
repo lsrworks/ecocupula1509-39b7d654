@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen flex items-center justify-center pt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -24,7 +24,7 @@ const Index = () => {
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         
-        <div className="relative z-10 container-eco text-center text-white">
+        <div className="relative z-10 container-eco text-center text-white -mt-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6">
             Domos Geodésicos
             <span className="block text-white">para Turismo de Experiência e Investimentos Sustentáveis</span>
