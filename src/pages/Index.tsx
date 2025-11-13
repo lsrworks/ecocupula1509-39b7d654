@@ -52,7 +52,7 @@ const Index = () => {
               variant="hero-outline"
               asChild
             >
-              <a href="#modelos">
+              <a href="/produtos">
                 Conheça os Modelos
               </a>
             </Button>
