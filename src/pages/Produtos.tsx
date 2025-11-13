@@ -75,10 +75,10 @@ const Produtos = () => {
         className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center bg-background"
       >
         <div className="container-eco text-center px-6 md:px-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-2">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4">
             Nossos <span className="text-primary">Modelos</span>
           </h1>
-          <p className="text-xl md:text-2xl leading-snug max-w-3xl mx-auto text-foreground">
+          <p className="text-xl md:text-2xl leading-snug max-w-3xl mx-auto text-muted-foreground">
             Descubra nossa linha completa de domos geodésicos de madeira, cada um projetado 
             para proporcionar experiências únicas em harmonia com a natureza.
           </p>
@@ -89,10 +89,10 @@ const Produtos = () => {
       <section id="modelos" className="py-12 md:py-16 bg-eco-gray-light">
         <div className="container-eco px-6 md:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-2">
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
               Escolha o Modelo Ideal
             </h2>
-            <p className="text-lg text-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Cada modelo foi desenvolvido para atender diferentes necessidades e capacidades
             </p>
           </div>
