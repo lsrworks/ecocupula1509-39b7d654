@@ -25,12 +25,12 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 container-eco text-center text-white -mt-16">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
             Domos Geodésicos
             <span className="block text-white">para Turismo de Experiência e Investimentos Sustentáveis</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Transforme sua propriedade em uma hospedagem diferenciada com arquitetura sustentável, 
             design único e alto retorno financeiro.
           </p>
@@ -107,10 +107,10 @@ const Index = () => {
       {/* CTA Section */}
       <section className="section-padding bg-primary text-primary-foreground">
         <div className="container-eco text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6">
             Pronto para Transformar seu Projeto?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
             Solicite um orçamento personalizado e descubra como os domos geodésicos 
             podem revolucionar seu investimento em turismo de experiência.
           </p>
