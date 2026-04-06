@@ -18,8 +18,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Primary - Main green #2b4a2a */
-    --primary: 140 13% 43%;
+    /* Primary - Main green #3F5F4A */
+    --primary: 140 20% 31%;
     --primary-foreground: 0 0% 98%;
 
     /* Secondary - Light gray backgrounds */
@@ -30,8 +30,8 @@
     --muted: 0 0% 96.5%;
     --muted-foreground: 0 0% 40%;
 
-    /* Accent - Green support color #4f7c4f for hovers */
-    --accent: 140 13% 35%;
+    /* Accent - Green support color for hovers */
+    --accent: 140 20% 25%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,14 +39,14 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 140 13% 43%;
+    --ring: 140 20% 31%;
 
     --radius: 0.75rem;
 
     /* Custom Eco Cúpula tokens */
-    --eco-green: 140 13% 43%; /* #5F7D6A - main brand color */
-    --eco-green-hover: 140 13% 35%; /* hover state */
-    --eco-green-light: 140 10% 90%; /* light green tint */
+    --eco-green: 140 20% 31%; /* #3F5F4A - main brand color */
+    --eco-green-hover: 140 20% 25%; /* hover state */
+    --eco-green-light: 140 15% 90%; /* light green tint */
     --eco-gray-light: 0 0% 96.5%; /* #f5f5f5 */
     --eco-gray-medium: 0 0% 70%; /* #b3b3b3 */
     --eco-gray-dark: 0 0% 20%; /* #333333 */
