@@ -25,17 +25,17 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 container-eco text-center text-white -mt-16">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-display font-bold mb-3 md:mb-6">
             Domos Geodésicos
             <span className="block text-white">para Turismo de Experiência e Investimentos Sustentáveis</span>
           </h1>
           
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-xl mb-5 md:mb-8 max-w-3xl mx-auto leading-relaxed">
             Transforme sua propriedade em uma hospedagem diferenciada com arquitetura sustentável, 
             design único e alto retorno financeiro.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center [&_a]:py-2 [&_a]:px-5 md:[&_a]:py-3 md:[&_a]:px-6">
             <Button
               variant="hero-primary"
               asChild
