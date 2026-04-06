@@ -5,7 +5,7 @@ import domeInteriorImage from '@/assets/dome-interior.jpg';
 import woodenDomeNature from '@/assets/wooden-dome-nature.jpg';
 
 const Produtos = () => {
-  const whatsappLink = "https://wa.me/5561993218805?text=Ol%C3%A1%2C%20conheci%20a%20Eco%20C%C3%BApula%20pelo%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20e%20um%20or%C3%A7amento%20personalizado%20dos%20domos%20geod%C3%A9sicos.";
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=5561993218805&text=Ol%C3%A1%2C+conheci+a+Eco+C%C3%BApula+pelo+site+e+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+e+um+or%C3%A7amento+personalizado+dos+domos+geod%C3%A9sicos.&type=phone_number&app_absent=0";
 
   const domeModels = [
     {
