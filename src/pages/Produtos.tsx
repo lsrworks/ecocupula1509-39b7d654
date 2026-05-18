@@ -82,7 +82,7 @@ const Produtos = () => {
       >
         <div className="container-eco text-center px-6 md:px-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4">
-            Nossos <span className="text-primary">Modelos</span>
+            Domos Geodésicos — <span className="text-primary">Modelos e Especificações</span>
           </h1>
           <p className="text-xl md:text-2xl leading-snug max-w-3xl mx-auto text-muted-foreground">
             Descubra nossa linha completa de domos geodésicos de madeira, cada um projetado 
