@@ -69,7 +69,7 @@ const FAQ = () => {
         <div className="container-eco">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Perguntas <span className="text-eco-gradient">Frequentes</span>
+              Domos Geodésicos — <span className="text-eco-gradient">Perguntas Frequentes</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Tire todas suas dúvidas sobre domos geodésicos, desde aspectos técnicos 
@@ -90,7 +90,7 @@ const FAQ = () => {
                     onClick={() => toggleItem(index)}
                     className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-eco-gray-light/50 transition-colors"
                   >
-                    <h3 className="text-lg font-display font-semibold pr-4">{faq.question}</h3>
+                    <h2 className="text-lg font-display font-semibold pr-4">{faq.question}</h2>
                     <div className="flex-shrink-0">
                       {openItem === index ? (
                         <Minus className="h-5 w-5 text-primary" />
