@@ -1,4 +1,5 @@
 import { ArrowRight, Clock, Globe, Lightbulb, TrendingUp } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Historia = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5561993218805&text=Ol%C3%A1%2C+conheci+a+Eco+C%C3%BApula+pelo+site+e+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+e+um+or%C3%A7amento+personalizado+dos+domos+geod%C3%A9sicos.&type=phone_number&app_absent=0";
@@ -51,6 +52,11 @@ const Historia = () => {
 
   return (
     <div className="pt-16">
+      <SEO
+        title="História dos Domos Geodésicos | Eco Cúpula"
+        description="Do design ancestral à arquitetura moderna: conheça a história dos domos geodésicos e sua evolução até os projetos da Eco Cúpula."
+        path="/historia"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-eco-gray-light">
         <div className="container-eco">

@@ -1,5 +1,6 @@
 import { Check, ArrowRight, Home, Users, Maximize } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SEO from '@/components/SEO';
 import domeModelsImage from '@/assets/dome-models.jpg';
 import domeInteriorImage from '@/assets/dome-interior.jpg';
 import woodenDomeNature from '@/assets/wooden-dome-nature.jpg';
@@ -70,6 +71,11 @@ const Produtos = () => {
 
   return (
     <div className="pt-16">
+      <SEO
+        title="Produtos e Modelos de Domos | Eco Cúpula"
+        description="Modelos de domos geodésicos para hospedagem, glamping e projetos sustentáveis. Compare tamanhos, capacidade e configurações."
+        path="/produtos"
+      />
       {/* Hero Banner Section */}
       <section 
         className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center bg-background"

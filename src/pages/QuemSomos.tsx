@@ -1,5 +1,6 @@
 import { Users, Award, Leaf, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SEO from '@/components/SEO';
 
 const QuemSomos = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5561993218805&text=Ol%C3%A1%2C+conheci+a+Eco+C%C3%BApula+pelo+site+e+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+e+um+or%C3%A7amento+personalizado+dos+domos+geod%C3%A9sicos.&type=phone_number&app_absent=0";
@@ -29,6 +30,11 @@ const QuemSomos = () => {
 
   return (
     <div className="pt-16">
+      <SEO
+        title="Quem Somos | Eco Cúpula"
+        description="Conheça a Eco Cúpula: especialistas em domos geodésicos sustentáveis, com foco em qualidade, inovação e arquitetura eco-friendly."
+        path="/quem-somos"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-eco-gray-light">
         <div className="container-eco">
