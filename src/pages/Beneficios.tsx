@@ -1,4 +1,5 @@
 import { ArrowRight, Shield, Zap, Heart, Leaf, DollarSign, Clock, Award, Users } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Beneficios = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5561993218805&text=Ol%C3%A1%2C+conheci+a+Eco+C%C3%BApula+pelo+site+e+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+e+um+or%C3%A7amento+personalizado+dos+domos+geod%C3%A9sicos.&type=phone_number&app_absent=0";
@@ -70,6 +71,11 @@ const Beneficios = () => {
 
   return (
     <div className="pt-16">
+      <SEO
+        title="Benefícios dos Domos Geodésicos | Eco Cúpula"
+        description="Construção ágil, resistente e sustentável. Descubra os benefícios dos domos geodésicos para turismo, hospedagem e moradia."
+        path="/beneficios"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-eco-gray-light">
         <div className="container-eco">

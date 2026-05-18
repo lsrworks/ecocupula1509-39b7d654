@@ -1,5 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-dome-new.webp';
 import domeModelsImage from '@/assets/dome-models.jpg';
 
@@ -15,6 +16,11 @@ const Index = () => {
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Eco Cúpula - Domos Geodésicos Sustentáveis"
+        description="Domos Geodésicos para glamping, turismo de experiência e arquitetura sustentável. Construção rápida, resistente e eco-friendly."
+        path="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16">
         <div 

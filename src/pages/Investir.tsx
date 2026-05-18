@@ -1,5 +1,6 @@
 import { TrendingUp, DollarSign, Calendar, Star, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SEO from '@/components/SEO';
 
 const Investir = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5561993218805&text=Ol%C3%A1%2C+conheci+a+Eco+C%C3%BApula+pelo+site+e+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+e+um+or%C3%A7amento+personalizado+dos+domos+geod%C3%A9sicos.&type=phone_number&app_absent=0";
@@ -86,6 +87,11 @@ const Investir = () => {
 
   return (
     <div className="pt-16">
+      <SEO
+        title="Invista em Domos Geodésicos | Eco Cúpula"
+        description="ROI superior, alta demanda no turismo e payback de 2 a 3 anos. Saiba por que investir em domos geodésicos com a Eco Cúpula."
+        path="/investir"
+      />
       {/* Hero Section */}
       <section className="section-padding bg-eco-gray-light">
         <div className="container-eco">
