@@ -40,7 +40,7 @@ const QuemSomos = () => {
         <div className="container-eco">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Somos a <span className="text-eco-gradient">Eco Cúpula</span>
+              Sobre a <span className="text-eco-gradient">Eco Cúpula</span> — Especialistas em Domos Geodésicos
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Especialistas em Domos Geodésicos que transformam sonhos arquitetônicos 
