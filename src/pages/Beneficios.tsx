@@ -81,7 +81,7 @@ const Beneficios = () => {
         <div className="container-eco">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Propriedades e <span className="text-eco-gradient">Benefícios</span>
+              Vantagens e <span className="text-eco-gradient">Benefícios</span> dos Domos Geodésicos
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Descubra as vantagens únicas dos domos geodésicos que os tornam 
