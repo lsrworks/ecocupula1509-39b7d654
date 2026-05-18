@@ -72,6 +72,8 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Menu principal"
+              aria-expanded={isMenuOpen}
               className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-eco-green-light/50"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
